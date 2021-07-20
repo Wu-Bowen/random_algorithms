@@ -1,5 +1,5 @@
 class Solution {
-    public Node dfsTraverseRecursive(int V, LinkedList<Integer>[] adj) {
+    public void dfsTraverseRecursive(int V, LinkedList<Integer>[] adj) {
         boolean[] visited = new boolean[V];
         Stack<Integer> s = new Stack<> ();
         for(int i = 0; i < adj.length; i++) {
@@ -10,12 +10,14 @@ class Solution {
                     visited[v] = true;
                     for(int j = 0; j < adj[v].size(); j++) {
                         if(!visited[j]){
+                            visited[j] = true;
                             s.push(j);
                         }
                     }
                 }
             }
         }
+        return;
     }
 }
 // O (V + E)

@@ -1,5 +1,5 @@
 class Solution {
-    public Node dfsTraverseRecursive(int V, LinkedList<Integer>[] adj) {
+    public Node dfsTraverseRecursive(int V, ArrayList<Integer>[] adj) {
         boolean[] visited = new boolean[V];
         for(int i = 0; i < adj.length; i++) {
             if(!visited[i]){

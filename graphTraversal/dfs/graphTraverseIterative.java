@@ -1,5 +1,5 @@
 class Solution {
-    public void dfsTraverseRecursive(int V, LinkedList<Integer>[] adj) {
+    public void dfsTraverseRecursive(int V, ArrayList<Integer>[] adj) {
         boolean[] visited = new boolean[V];
         Stack<Integer> s = new Stack<> ();
         for(int i = 0; i < adj.length; i++) {
